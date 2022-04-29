@@ -4,10 +4,6 @@
 # Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
 # Return the sum of the three integers.
 
-
-from turtle import distance
-
-
 class Solution:
     def threeSumClosest(self, nums, target: int) -> int:
         sum_closest = 0
@@ -15,7 +11,7 @@ class Solution:
         nums_len = len(nums)
         # If not enough leng to make triplet
         if nums_len < 3:
-            return []
+            return 0
         nums = sorted(nums)
         print("sorted nums:{}".format(nums))
         triplet = []
