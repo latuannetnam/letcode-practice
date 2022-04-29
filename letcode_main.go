@@ -7,5 +7,8 @@ func main() {
 	sayHello("Welcome to Letcode contest")
 
 	// 16. 3Sum Closest
-	mainThreeSumClosest()
+	// mainThreeSumClosest()
+	// 17. Letter Combinations of a Phone Number
+	mainLetterCombinations()
+
 }
