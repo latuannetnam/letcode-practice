@@ -8,7 +8,11 @@ func main() {
 
 	// 16. 3Sum Closest
 	// mainThreeSumClosest()
+
 	// 17. Letter Combinations of a Phone Number
-	mainLetterCombinations()
+	// mainLetterCombinations()
+
+	// 18. 4Sum
+	mainFourSum()
 
 }
