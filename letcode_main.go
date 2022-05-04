@@ -13,6 +13,9 @@ func main() {
 	// mainLetterCombinations()
 
 	// 18. 4Sum
-	mainFourSum()
+	// mainFourSum()
+
+	// 19. Remove Nth Node From End of List
+	mainRemoveNthFromEnd()
 
 }
