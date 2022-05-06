@@ -19,6 +19,8 @@ func main() {
 	// mainRemoveNthFromEnd()
 
 	// 22. Generate Parentheses
-	mainGenerateParenthesis()
+	// mainGenerateParenthesis()
 
+	// 24. Swap Nodes in Pairs
+	mainSwapPairs()
 }
