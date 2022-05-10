@@ -25,5 +25,8 @@ func main() {
 	// mainSwapPairs()
 
 	// 31. Next Permutation
-	mainNextPermutation()
+	// mainNextPermutation()
+
+	// 704. Binary Search
+	mainSearch()
 }
