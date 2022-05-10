@@ -22,5 +22,8 @@ func main() {
 	// mainGenerateParenthesis()
 
 	// 24. Swap Nodes in Pairs
-	mainSwapPairs()
+	// mainSwapPairs()
+
+	// 31. Next Permutation
+	mainNextPermutation()
 }
