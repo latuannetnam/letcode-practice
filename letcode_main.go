@@ -31,5 +31,8 @@ func main() {
 	// mainSearch()
 
 	// 278. First Bad Version
-	mainFirstBadVersion()
+	// mainFirstBadVersion()
+
+	// 35. Search Insert Position
+	mainSearchInsert()
 }
