@@ -28,5 +28,8 @@ func main() {
 	// mainNextPermutation()
 
 	// 704. Binary Search
-	mainSearch()
+	// mainSearch()
+
+	// 278. First Bad Version
+	mainFirstBadVersion()
 }
