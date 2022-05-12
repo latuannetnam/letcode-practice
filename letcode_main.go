@@ -34,5 +34,8 @@ func main() {
 	// mainFirstBadVersion()
 
 	// 35. Search Insert Position
-	mainSearchInsert()
+	// mainSearchInsert()
+
+	//  977. Squares of a Sorted Array
+	mainSortedSquares()
 }
