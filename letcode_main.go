@@ -37,5 +37,8 @@ func main() {
 	// mainSearchInsert()
 
 	//  977. Squares of a Sorted Array
-	mainSortedSquares()
+	// mainSortedSquares()
+
+	// 88. Merge Sorted Array
+	mainMergeSortedArrays()
 }
