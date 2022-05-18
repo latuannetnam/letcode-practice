@@ -40,5 +40,8 @@ func main() {
 	// mainSortedSquares()
 
 	// 88. Merge Sorted Array
-	mainMergeSortedArrays()
+	// mainMergeSortedArrays()
+
+	//  189. Rotate Array
+	mainRotateArray()
 }
