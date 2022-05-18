@@ -43,5 +43,8 @@ func main() {
 	// mainMergeSortedArrays()
 
 	//  189. Rotate Array
-	mainRotateArray()
+	// mainRotateArray()
+
+	// 283. Move Zeroes
+	mainMoveZeroes()
 }
