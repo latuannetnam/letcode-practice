@@ -7,12 +7,6 @@ package main
 
 import "fmt"
 
-//  Definition for singly-linked list.
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	if head.Next == nil && n == 1 {
 		return nil
@@ -39,38 +33,6 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return head
 }
 
-func slice2List(lists []int) *ListNode {
-	var head *ListNode = nil
-	var node *ListNode = nil
-	for index := range lists {
-		if head == nil {
-			head = &ListNode{
-				Val:  lists[index],
-				Next: nil,
-			}
-			node = head
-		} else {
-			new_node := &ListNode{
-				Val:  lists[index],
-				Next: nil,
-			}
-			node.Next = new_node
-			node = new_node
-		}
-	}
-	return head
-}
-
-func list2Slice(head *ListNode) []int {
-	lists := []int{}
-	var node *ListNode = nil
-	node = head
-	for node != nil {
-		lists = append(lists, node.Val)
-		node = node.Next
-	}
-	return lists
-}
 func mainRemoveNthFromEnd() {
 	// lists := []int{1, 2, 3, 4, 5}
 	lists := []int{1, 2}
