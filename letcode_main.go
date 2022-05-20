@@ -16,7 +16,7 @@ func main() {
 	// mainFourSum()
 
 	// 19. Remove Nth Node From End of List
-	mainRemoveNthFromEnd()
+	// mainRemoveNthFromEnd()
 
 	// 22. Generate Parentheses
 	// mainGenerateParenthesis()
@@ -59,5 +59,8 @@ func main() {
 
 	// 876. Middle of the Linked List
 	// mainMiddleNode()
+
+	// 3. Longest Substring Without Repeating Characters
+	mainLengthOfLongestSubstring()
 
 }
