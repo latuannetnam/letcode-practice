@@ -16,7 +16,7 @@ func main() {
 	// mainFourSum()
 
 	// 19. Remove Nth Node From End of List
-	// mainRemoveNthFromEnd()
+	mainRemoveNthFromEnd()
 
 	// 22. Generate Parentheses
 	// mainGenerateParenthesis()
@@ -58,6 +58,6 @@ func main() {
 	// mainReverseWords()
 
 	// 876. Middle of the Linked List
-	mainMiddleNode()
+	// mainMiddleNode()
 
 }
