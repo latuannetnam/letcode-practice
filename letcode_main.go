@@ -61,6 +61,9 @@ func main() {
 	// mainMiddleNode()
 
 	// 3. Longest Substring Without Repeating Characters
-	mainLengthOfLongestSubstring()
+	// mainLengthOfLongestSubstring()
+
+	// 567. Permutation in String
+	mainCheckInclusion()
 
 }
