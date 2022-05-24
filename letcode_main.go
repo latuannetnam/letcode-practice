@@ -67,6 +67,8 @@ func main() {
 	// mainCheckInclusion()
 
 	// 733. Flood Fill
-	mainFloodFill()
+	//mainFloodFill()
 
+	//217. Contains Duplicate
+	mainContainsDuplicate()
 }
