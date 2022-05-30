@@ -70,5 +70,8 @@ func main() {
 	//mainFloodFill()
 
 	//217. Contains Duplicate
-	mainContainsDuplicate()
+	//mainContainsDuplicate()
+
+	//53. Maximum Subarray
+	mainMaxSubArray()
 }
