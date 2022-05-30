@@ -1,6 +1,13 @@
 // Utilities for letcode
 package main
 
+func abs(num int) int {
+	if num < 0 {
+		return -num
+	}
+	return num
+}
+
 //  Definition for singly-linked list.
 type ListNode struct {
 	Val  int
@@ -55,4 +62,14 @@ func (s stackOfArray) Pop() (stackOfArray, []int) {
 
 func (s stackOfArray) isEmpty() bool {
 	return len(s) == 0
+}
+
+func reverseArray(nums []int, start, end int) {
+	left := start
+	right := end - 1
+	for left <= right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
+	}
 }

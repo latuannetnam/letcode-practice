@@ -56,16 +56,6 @@ func rotateArrayInPlace(nums []int, k int) {
 	}
 }
 
-func reverseArray(nums []int, start, end int) {
-	left := start
-	right := end - 1
-	for left <= right {
-		nums[left], nums[right] = nums[right], nums[left]
-		left++
-		right--
-	}
-}
-
 // Rotate by swap part of array
 // https://leetcode.com/problems/rotate-array/discuss/2049239/Python-O(n)-time-Solution-w-Comments
 func rotateArray(nums []int, k int) {

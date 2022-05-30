@@ -73,5 +73,10 @@ func main() {
 	//mainContainsDuplicate()
 
 	//53. Maximum Subarray
-	mainMaxSubArray()
+	//mainMaxSubArray()
+	//200. Number of Islands
+	//mainNumIslands()
+
+	//695. Max Area of Island
+	mainMaxAreaOfIsland()
 }

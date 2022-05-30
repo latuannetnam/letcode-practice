@@ -11,13 +11,6 @@ import (
 	"sort"
 )
 
-func abs(num int) int {
-	if num < 0 {
-		return -num
-	}
-	return num
-}
-
 func threeSumClosest(nums []int, target int) int {
 	var first_sum bool = true
 	var sum_closest int = 0
