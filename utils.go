@@ -1,6 +1,7 @@
 // Utilities for letcode
 package main
 
+//---------------Other utils
 func abs(num int) int {
 	if num < 0 {
 		return -num
@@ -8,7 +9,17 @@ func abs(num int) int {
 	return num
 }
 
-//  Definition for singly-linked list.
+func reverseArray(nums []int, start, end int) {
+	left := start
+	right := end - 1
+	for left <= right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
+	}
+}
+
+// ----------------  Definition for singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -47,6 +58,7 @@ func list2Slice(head *ListNode) []int {
 	return lists
 }
 
+//--------------- Stack of Array------------
 type stackOfArray [][]int
 
 func (s stackOfArray) Push(v []int) stackOfArray {
@@ -64,12 +76,68 @@ func (s stackOfArray) isEmpty() bool {
 	return len(s) == 0
 }
 
-func reverseArray(nums []int, start, end int) {
-	left := start
-	right := end - 1
-	for left <= right {
-		nums[left], nums[right] = nums[right], nums[left]
-		left++
-		right--
+// ------------- Binary Tree
+//https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+func (t *TreeNode) insert(item int) *TreeNode {
+	if t == nil {
+		t = &TreeNode{
+			Val:   item,
+			Left:  nil,
+			Right: nil,
+		}
+	} else if t.Val <= item {
+		if t.Left == nil {
+			t.Left = &TreeNode{
+				Val:   item,
+				Left:  nil,
+				Right: nil,
+			}
+		} else {
+			t.Left = t.Left.insert(item)
+		}
+	} else {
+		if t.Right == nil {
+			t.Right = &TreeNode{
+				Val:   item,
+				Left:  nil,
+				Right: nil,
+			}
+		} else {
+			t.Right = t.Right.insert(item)
+		}
 	}
+	return t
+}
+
+func (t *TreeNode) leftTraverse(lists []int) []int {
+	if t != nil {
+		item := t.Val
+		lists = append(lists, item)
+		if t.Left != nil {
+			lists = t.Left.leftTraverse(lists)
+		}
+		if t.Right != nil {
+			lists = t.Right.leftTraverse(lists)
+		}
+	}
+	return lists
+}
+func slice2BTree(lists []int) *TreeNode {
+	var root *TreeNode = nil
+	for _, item := range lists {
+		root = root.insert(item)
+	}
+	return root
+}
+
+func bTree2slice(node *TreeNode) []int {
+	lists := []int{}
+	lists = node.leftTraverse(lists)
+	return lists
 }

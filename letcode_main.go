@@ -78,5 +78,8 @@ func main() {
 	//mainNumIslands()
 
 	//695. Max Area of Island
-	mainMaxAreaOfIsland()
+	//mainMaxAreaOfIsland()
+
+	//617. Merge Two Binary Trees
+	mainMergeTrees()
 }
