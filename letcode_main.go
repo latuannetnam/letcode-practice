@@ -81,5 +81,8 @@ func main() {
 	//mainMaxAreaOfIsland()
 
 	//617. Merge Two Binary Trees
-	mainMergeTrees()
+	//mainMergeTrees()
+
+	//116. Populating Next Right Pointers in Each Node
+	mainPopulatingNextRightPointers()
 }
