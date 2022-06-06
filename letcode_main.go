@@ -87,5 +87,9 @@ func main() {
 	//mainPopulatingNextRightPointers()
 
 	//994. Rotting Oranges
-	mainOrangesRotting()
+	//mainOrangesRotting()
+
+	//21. Merge Two Sorted Lists
+	mainMergeTwoLists()
+
 }
