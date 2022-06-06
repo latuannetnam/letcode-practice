@@ -84,5 +84,8 @@ func main() {
 	//mainMergeTrees()
 
 	//116. Populating Next Right Pointers in Each Node
-	mainPopulatingNextRightPointers()
+	//mainPopulatingNextRightPointers()
+
+	//994. Rotting Oranges
+	mainOrangesRotting()
 }
