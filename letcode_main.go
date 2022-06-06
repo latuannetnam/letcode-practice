@@ -90,6 +90,8 @@ func main() {
 	//mainOrangesRotting()
 
 	//21. Merge Two Sorted Lists
-	mainMergeTwoLists()
+	//mainMergeTwoLists()
 
+	//206. Reverse Linked List
+	mainReverseList()
 }
