@@ -93,5 +93,8 @@ func main() {
 	//mainMergeTwoLists()
 
 	//206. Reverse Linked List
-	mainReverseList()
+	//mainReverseList()
+
+	//77. Combinations
+	mainCombineKofNInteger()
 }
