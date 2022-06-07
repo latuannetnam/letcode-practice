@@ -96,5 +96,8 @@ func main() {
 	//mainReverseList()
 
 	//77. Combinations
-	mainCombineKofNInteger()
+	//mainCombineKofNInteger()
+
+	//46. Permutations
+	mainArrayPermutations()
 }
