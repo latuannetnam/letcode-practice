@@ -99,5 +99,8 @@ func main() {
 	//mainCombineKofNInteger()
 
 	//46. Permutations
-	mainArrayPermutations()
+	//mainArrayPermutations()
+
+	//784. Letter Case Permutation
+	mainLetterCasePermutation()
 }
