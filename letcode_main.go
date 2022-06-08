@@ -102,5 +102,8 @@ func main() {
 	//mainArrayPermutations()
 
 	//784. Letter Case Permutation
-	mainLetterCasePermutation()
+	//mainLetterCasePermutation()
+
+	//70. Climbing Stairs
+	mainClimbStairs()
 }
