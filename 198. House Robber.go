@@ -40,7 +40,8 @@ func robFromFirstHouse(nums []int, firstHouse int, lookup []int) int {
 	return lookup[firstHouse]
 }
 
-func robHouse(nums []int) int {
+//Dynamic Programing with Memorization
+func robHouse2(nums []int) int {
 	maxMoney := 0
 	lookup := make([]int, len(nums))
 	for i := range lookup {
@@ -55,6 +56,29 @@ func robHouse(nums []int) int {
 		fmt.Printf("\nAfter First house:%d:%d - max:%d\n", i, lookup[i], maxMoney)
 	}
 	return maxMoney
+}
+
+//https://leetcode.com/problems/house-robber/discuss/2131118/Tabulation-(100-fast)-dp-java
+func robHouse(nums []int) int {
+	n := len(nums)
+	dp := make([]int, n)
+	dp[0] = nums[0]
+	for i := 1; i < n; i++ {
+		op1 := dp[i-1]
+		var op2 int
+		if i > 1 {
+			op2 = dp[i-2] + nums[i]
+		} else {
+			op2 = nums[i]
+		}
+		if op1 > op2 {
+			dp[i] = op1
+		} else {
+			dp[i] = op2
+		}
+		fmt.Printf("i:%d dp[%d]:%d\n", i, i, dp[i])
+	}
+	return dp[n-1]
 }
 
 func mainRobHouse() {
