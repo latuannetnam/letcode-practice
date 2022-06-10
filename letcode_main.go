@@ -111,5 +111,8 @@ func main() {
 	//mainRobHouse()
 
 	//120. Triangle
-	mainMinimumTotal()
+	//mainMinimumTotal()
+
+	//231. Power of Two
+	mainIsPowerOfTwo()
 }
