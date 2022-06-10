@@ -1,12 +1,22 @@
 // Utilities for letcode
 package main
 
+import "math"
+
 //---------------Other utils
 func abs(num int) int {
 	if num < 0 {
 		return -num
 	}
 	return num
+}
+
+func min(num1 int, num2 int) int {
+	return int(math.Min(float64(num1), float64(num2)))
+}
+
+func max(num1 int, num2 int) int {
+	return int(math.Max(float64(num1), float64(num2)))
 }
 
 func reverseArray(nums []int, start, end int) {

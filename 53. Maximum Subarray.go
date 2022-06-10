@@ -137,14 +137,6 @@ func maxSubArray(nums []int) int {
 	return currentMax
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-
-	return b
-}
-
 func mainMaxSubArray() {
 	nums := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
 	fmt.Printf("nums:%v\n", nums)

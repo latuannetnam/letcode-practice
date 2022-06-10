@@ -108,5 +108,8 @@ func main() {
 	//mainClimbStairs()
 
 	//198. House Robber
-	mainRobHouse()
+	//mainRobHouse()
+
+	//120. Triangle
+	mainMinimumTotal()
 }
