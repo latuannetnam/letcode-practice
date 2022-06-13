@@ -114,5 +114,8 @@ func main() {
 	//mainMinimumTotal()
 
 	//231. Power of Two
-	mainIsPowerOfTwo()
+	//mainIsPowerOfTwo()
+
+	//191. Number of 1 Bits
+	mainHammingWeight()
 }
