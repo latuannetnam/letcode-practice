@@ -117,5 +117,8 @@ func main() {
 	//mainIsPowerOfTwo()
 
 	//191. Number of 1 Bits
-	mainHammingWeight()
+	//mainHammingWeight()
+
+	//190. Reverse Bits
+	mainReverseBits()
 }
