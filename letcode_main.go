@@ -120,5 +120,8 @@ func main() {
 	//mainHammingWeight()
 
 	//190. Reverse Bits
-	mainReverseBits()
+	//mainReverseBits()
+
+	//136. Single Number
+	mainSingleNumber()
 }
