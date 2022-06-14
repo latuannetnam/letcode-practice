@@ -126,5 +126,8 @@ func main() {
 	//mainSingleNumber()
 
 	//34. Find First and Last Position of Element in Sorted Array
-	mainSearchRange()
+	//mainSearchRange()
+
+	//33. Search in Rotated Sorted Array
+	mainSearchRotatedSortedArray()
 }
