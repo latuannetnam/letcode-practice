@@ -129,5 +129,8 @@ func main() {
 	//mainSearchRange()
 
 	//33. Search in Rotated Sorted Array
-	mainSearchRotatedSortedArray()
+	//mainSearchRotatedSortedArray()
+
+	//153. Find Minimum in Rotated Sorted Array
+	mainFindMinInRotatedSortedArray()
 }

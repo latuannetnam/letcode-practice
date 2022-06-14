@@ -19,28 +19,6 @@ import (
 	"fmt"
 )
 
-func binarySearch(nums []int, target int, start int, end int) int {
-	result := -1
-	left := start
-	right := end
-	fmt.Printf("binarySearch start:%d end:%d %v:%d\n", start, end, nums[start:end+1], target)
-	for left <= right {
-		mid := (left + right) / 2
-		fmt.Printf("left:%d mid:%d right:%d:%d\n", left, mid, right, nums[mid])
-		if nums[mid] == target {
-			fmt.Printf("Found target %d at pos:%d\n", target, mid)
-			result = mid
-			break
-		} else if nums[mid] < target {
-			left = mid + 1
-		} else {
-			right = mid - 1
-		}
-	}
-	fmt.Printf("binarySearch result:%v\n", result)
-	return result
-}
-
 //Runtime: 3 ms, faster than 64.77% of Go online submissions for Search in Rotated Sorted Array.
 //Memory Usage: 2.6 MB, less than 65.40% of Go online submissions for Search in Rotated Sorted Array.
 func searchRotatedSortedArray2(nums []int, target int) int {
