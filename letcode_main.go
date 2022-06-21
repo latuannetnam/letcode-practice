@@ -147,5 +147,8 @@ func main() {
 	//mainDeleteDuplicates()
 
 	//82. Remove Duplicates from Sorted List II
-	mainDeleteDuplicatesII()
+	//mainDeleteDuplicatesII()
+
+	//844. Backspace String Compare
+	mainBackspaceCompare()
 }
