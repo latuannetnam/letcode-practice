@@ -150,5 +150,8 @@ func main() {
 	//mainDeleteDuplicatesII()
 
 	//844. Backspace String Compare
-	mainBackspaceCompare()
+	//mainBackspaceCompare()
+
+	//986. Interval List Intersections
+	mainIntervalIntersection()
 }
