@@ -153,5 +153,8 @@ func main() {
 	//mainBackspaceCompare()
 
 	//986. Interval List Intersections
-	mainIntervalIntersection()
+	//mainIntervalIntersection()
+
+	//438. Find All Anagrams in a String
+	mainFindAnagrams()
 }
