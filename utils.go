@@ -111,6 +111,22 @@ func (s stackOfArray) isEmpty() bool {
 	return len(s) == 0
 }
 
+//--------------- Queue of Array------------
+type queueOfArray [][]int
+
+func (s queueOfArray) Push(v []int) queueOfArray {
+	return append(s, v)
+}
+
+func (s queueOfArray) Pop() (queueOfArray, []int) {
+	// FIXME: What do we do if the queue is empty, though?
+	return s[1:], s[0]
+}
+
+func (s queueOfArray) isEmpty() bool {
+	return len(s) == 0
+}
+
 // ------------- Binary Tree
 //https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
 type TreeNode struct {
