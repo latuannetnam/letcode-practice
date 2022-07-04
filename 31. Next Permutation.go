@@ -41,12 +41,6 @@ func buildPermutation(nums []int) []string {
 	return result
 }
 
-func arrayToString(arr []int, delim string) string {
-	return strings.Trim(strings.Replace(fmt.Sprintf("%03v", arr), " ", delim, -1), "[]")
-	//return strings.Trim(strings.Join(strings.Split(fmt.Sprint(a), " "), delim), "[]")
-	//return strings.Trim(strings.Join(strings.Fields(fmt.Sprint(a)), delim), "[]")
-}
-
 func intSlice2String(nums []int) string {
 	return strings.Trim(fmt.Sprintf("%03v", nums), "[]")
 }

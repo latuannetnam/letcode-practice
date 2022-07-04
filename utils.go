@@ -4,6 +4,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strings"
 )
 
 //---------------Other utils
@@ -32,6 +33,14 @@ func reverseArray(nums []int, start, end int) {
 	}
 }
 
+//-------- String utils -------
+func arrayToString(arr []int, delim string) string {
+	return strings.Trim(strings.Replace(fmt.Sprintf("%03v", arr), " ", delim, -1), "[]")
+	//return strings.Trim(strings.Join(strings.Split(fmt.Sprint(a), " "), delim), "[]")
+	//return strings.Trim(strings.Join(strings.Fields(fmt.Sprint(a)), delim), "[]")
+}
+
+//---------- Binary search ------
 func binarySearch(nums []int, target int, start int, end int) int {
 	result := -1
 	left := start
