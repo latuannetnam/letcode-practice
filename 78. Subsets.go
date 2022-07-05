@@ -105,15 +105,19 @@ func subsetsBacktrack(nums []int) [][]int {
 	//Backtracking function
 	var backTracking func(int, []int)
 	backTracking = func(start int, subResult []int) {
-		result = append(result, subResult)
-		fmt.Printf("backTracking start:%d %v: %v\n", start, subResult, result)
+		tempResult := make([]int, len(subResult))
+		copy(tempResult, subResult)
+		result = append(result, tempResult)
 		for i := start; i < len(nums); i++ {
+			//if i != start && nums[i] == nums[i-1] {
+			//	continue
+			//}
 			subResult = append(subResult, nums[i])
+			fmt.Printf("backTracking start:%d %v: %v\n", start, subResult, result)
 			backTracking(i+1, subResult)
 			//	Backtrack
-			if len(subResult) > 0 {
-				subResult = subResult[1:]
-			}
+			subResult = subResult[:len(subResult)-1]
+			fmt.Printf("After backTracking start:%d %v:%v\n", start, subResult, result)
 		}
 	}
 	//------------------------
