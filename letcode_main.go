@@ -101,6 +101,9 @@ func main() {
 	//46. Permutations
 	//mainArrayPermutations()
 
+	//47. Permutations II
+	mainPermuteUnique()
+
 	//784. Letter Case Permutation
 	//mainLetterCasePermutation()
 
@@ -174,6 +177,6 @@ func main() {
 	//mainSubsets()
 
 	//90. Subsets II
-	mainSubsetsWithDup()
+	//mainSubsetsWithDup()
 
 }
