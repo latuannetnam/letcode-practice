@@ -102,7 +102,7 @@ func main() {
 	//mainArrayPermutations()
 
 	//47. Permutations II
-	mainPermuteUnique()
+	//mainPermuteUnique()
 
 	//784. Letter Case Permutation
 	//mainLetterCasePermutation()
@@ -178,5 +178,8 @@ func main() {
 
 	//90. Subsets II
 	//mainSubsetsWithDup()
+
+	//39. Combination Sum
+	mainCombinationSum()
 
 }
