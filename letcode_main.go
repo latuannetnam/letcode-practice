@@ -19,7 +19,7 @@ func main() {
 	// mainRemoveNthFromEnd()
 
 	// 22. Generate Parentheses
-	// mainGenerateParenthesis()
+	mainGenerateParenthesis()
 
 	// 24. Swap Nodes in Pairs
 	// mainSwapPairs()
@@ -183,6 +183,6 @@ func main() {
 	//mainCombinationSum()
 
 	//40. Combination Sum II
-	mainCombinationSumII()
+	//mainCombinationSumII()
 
 }
