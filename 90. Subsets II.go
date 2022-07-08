@@ -14,27 +14,6 @@ import (
 	"strconv"
 )
 
-//Compared 2 sorted array
-func arrayEqual(arr1 []int, arr2 []int) bool {
-	if len(arr1) != len(arr2) {
-		return false
-	}
-	for i := range arr1 {
-		if arr1[i] != arr2[i] {
-			return false
-		}
-	}
-	return true
-}
-func checkSubArrayExits(subArr []int, arr [][]int) bool {
-	for i := range arr {
-		if arrayEqual(arr[i], subArr) {
-			return true
-		}
-	}
-	return false
-}
-
 //Cascade, remove duplicate by comparing duplicate sub array
 //Runtime: 8 ms, faster than 6.34% of Go online submissions for Subsets II.
 //Memory Usage: 2.6 MB, less than 30.99% of Go online submissions for Subsets II.

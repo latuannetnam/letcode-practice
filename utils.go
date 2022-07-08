@@ -23,6 +23,28 @@ func max(num1 int, num2 int) int {
 	return int(math.Max(float64(num1), float64(num2)))
 }
 
+//---------- Array utils
+//Compared 2 sorted array
+func arrayEqual(arr1 []int, arr2 []int) bool {
+	if len(arr1) != len(arr2) {
+		return false
+	}
+	for i := range arr1 {
+		if arr1[i] != arr2[i] {
+			return false
+		}
+	}
+	return true
+}
+func checkSubArrayExits(subArr []int, arr [][]int) bool {
+	for i := range arr {
+		if arrayEqual(arr[i], subArr) {
+			return true
+		}
+	}
+	return false
+}
+
 func reverseArray(nums []int, start, end int) {
 	left := start
 	right := end - 1

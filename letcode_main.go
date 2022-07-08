@@ -180,6 +180,9 @@ func main() {
 	//mainSubsetsWithDup()
 
 	//39. Combination Sum
-	mainCombinationSum()
+	//mainCombinationSum()
+
+	//40. Combination Sum II
+	mainCombinationSumII()
 
 }
