@@ -186,6 +186,9 @@ func main() {
 	//mainCombinationSumII()
 
 	//20. Valid Parentheses
-	mainValidParentheses()
+	// mainValidParentheses()
+
+	// 79. Word Search
+	mainExistWordInMatrix()
 
 }
