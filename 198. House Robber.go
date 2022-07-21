@@ -4,6 +4,7 @@
 // Letcode problem: 198. House Robber
 // Letcode link: https://leetcode.com/problems/house-robber/
 // Level: medium
+// Topic: Dynamic Programing
 //https://www.geeksforgeeks.org/solve-dynamic-programming-problem/
 //You are a professional robber planning to rob houses along a street.
 //Each house has a certain amount of money stashed,
@@ -59,7 +60,7 @@ func robHouse2(nums []int) int {
 }
 
 //https://leetcode.com/problems/house-robber/discuss/2131118/Tabulation-(100-fast)-dp-java
-func robHouse(nums []int) int {
+func robHouse3(nums []int) int {
 	n := len(nums)
 	dp := make([]int, n)
 	dp[0] = nums[0]
@@ -81,6 +82,63 @@ func robHouse(nums []int) int {
 	return dp[n-1]
 }
 
+// -------------------------------------------------------------------
+// Dynamic Programing
+//  dp[i] = Max(dp[i-2] + nums[i], dp[i-1])
+func robHouseMemorize(nums []int) int {
+	n := len(nums)
+	if n == 1 {
+		return nums[0]
+	}
+
+	dp := make([]int, n)
+	for i := range dp {
+		dp[i] = -1
+	}
+	dp[0] = nums[0]
+	dp[1] = max(dp[0], nums[1])
+
+	var robFromHouse func(int) int
+	robFromHouse = func(house int) int {
+		fmt.Printf("Rob from house:%d dp[%d]:%d\n", house, house, dp[house])
+		if dp[house] >= 0 {
+			return dp[house]
+		}
+		if house < 0 {
+			return 0
+		}
+		moneyFromHouse := nums[house] + robFromHouse(house-2)
+		moneyFromAdjHouse := robFromHouse(house - 1)
+		fmt.Printf("  moneyFromHouse[%d]:%d   moneyFromAdjHouse:[%d]:%d\n", house, moneyFromHouse, house-1, moneyFromAdjHouse)
+		dp[house] = max(moneyFromHouse, moneyFromAdjHouse)
+		return dp[house]
+	}
+	maxMoney := robFromHouse(n - 1)
+	return maxMoney
+}
+
+func robHouseTabular(nums []int) int {
+
+	n := len(nums)
+	if n == 1 {
+		return nums[0]
+	}
+
+	dp := make([]int, n)
+	dp[0] = nums[0]
+	dp[1] = max(dp[0], nums[1])
+	for i := 2; i < n; i++ {
+		moneyFromHouse := nums[i] + dp[i-2]
+		moneyFromAdjHouse := dp[i-1]
+		dp[i] = max(moneyFromHouse, moneyFromAdjHouse)
+		fmt.Printf("Rob from house[%d]:%d-%d =>%d\n", i, moneyFromHouse, moneyFromAdjHouse, dp[i])
+	}
+	fmt.Printf("dp:%v\n", dp)
+
+	return dp[n-1]
+
+}
+
 func mainRobHouse() {
 	//nums := []int{1, 2, 3, 1}
 	//money := robHouse(nums)
@@ -88,8 +146,11 @@ func mainRobHouse() {
 	//
 	fmt.Printf("\n------\n")
 	nums := []int{2, 7, 9, 3, 1}
-	money := robHouse(nums)
-	fmt.Printf("nums:%v  money:%d\n", nums, money)
+	nums = []int{1, 2, 3, 1}
+	fmt.Printf("nums:%v \n", nums)
+	// money := robHouseMemorize(nums)
+	money := robHouseTabular(nums)
+	fmt.Printf("money:%d\n", money)
 	//
 	//fmt.Printf("\n------\n")
 	//nums = []int{2, 1, 1, 2}
