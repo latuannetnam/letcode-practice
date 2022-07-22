@@ -195,6 +195,9 @@ func main() {
 	// mainExistWordInMatrix()
 
 	// 55. Jump Game
-	mainJumpGame()
+	// mainJumpGame()
+
+	// 45. Jump Game II
+	mainMinumJump()
 
 }
