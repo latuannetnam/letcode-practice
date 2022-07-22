@@ -114,7 +114,7 @@ func main() {
 	// mainRobHouse()
 
 	// 213. House Robber II
-	mainRobHouseII()
+	// mainRobHouseII()
 
 	//120. Triangle
 	//mainMinimumTotal()
@@ -193,5 +193,8 @@ func main() {
 
 	// 79. Word Search
 	// mainExistWordInMatrix()
+
+	// 55. Jump Game
+	mainJumpGame()
 
 }
