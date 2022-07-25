@@ -198,6 +198,9 @@ func main() {
 	// mainJumpGame()
 
 	// 45. Jump Game II
-	mainMinumJump()
+	// mainMinumJump()
+
+	// 5. Longest Palindromic Substring
+	mainLongestPalindrome()
 
 }

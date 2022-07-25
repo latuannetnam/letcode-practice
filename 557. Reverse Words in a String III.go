@@ -20,7 +20,7 @@ func reverseWords(s string) string {
 	for _, sub_s := range s_list {
 		fmt.Printf("sub s: %s\n", sub_s)
 		sub_s_arr := []byte(sub_s)
-		reverseString(sub_s_arr)
+		reverseStringByte(sub_s_arr)
 		if len(new_s) > 0 {
 			new_s = append(new_s, ' ')
 		}

@@ -62,6 +62,40 @@ func arrayToString(arr []int, delim string) string {
 	//return strings.Trim(strings.Join(strings.Fields(fmt.Sprint(a)), delim), "[]")
 }
 
+// Runtime: 47 ms, faster than 26.09% of Go online submissions for Reverse String.
+// Memory Usage: 6.7 MB, less than 57.52% of Go online submissions for Reverse String.
+func reverseStringByte(s []byte) {
+	start := 0
+	end := len(s) - 1
+	for start < end {
+		s[start], s[end] = s[end], s[start]
+		start++
+		end--
+	}
+}
+
+func reverseString(s string) string {
+	rns := []rune(s) // convert to rune
+	n := len(s)
+	for i := 0; i < n/2; i++ {
+		rns[i], rns[n-i-1] = rns[n-i-1], rns[i]
+	}
+	return string(rns)
+}
+
+func isPalindromeString(s1 string) bool {
+	if len(s1) == 1 {
+		return true
+	}
+	n := len(s1)
+	for i := 0; i < n/2; i++ {
+		if s1[i] != s1[n-i-1] {
+			return false
+		}
+	}
+	return true
+}
+
 //---------- Binary search ------
 func binarySearch(nums []int, target int, start int, end int) int {
 	result := -1
