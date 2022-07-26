@@ -201,6 +201,9 @@ func main() {
 	// mainMinumJump()
 
 	// 5. Longest Palindromic Substring
-	mainLongestPalindrome()
+	// mainLongestPalindrome()
+
+	// 413. Arithmetic Slices
+	mainNumberOfArithmeticSlices()
 
 }
