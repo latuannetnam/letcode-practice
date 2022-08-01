@@ -204,6 +204,9 @@ func main() {
 	// mainLongestPalindrome()
 
 	// 413. Arithmetic Slices
-	mainNumberOfArithmeticSlices()
+	// mainNumberOfArithmeticSlices()
+
+	// 300. Longest Increasing Subsequence
+	mainLengthOfLIS()
 
 }
