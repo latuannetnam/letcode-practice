@@ -207,6 +207,9 @@ func main() {
 	// mainNumberOfArithmeticSlices()
 
 	// 300. Longest Increasing Subsequence
-	mainLengthOfLIS()
+	// mainLengthOfLIS()
+
+	// 673. Number of Longest Increasing Subsequence
+	mainFindNumberOfLIS()
 
 }
