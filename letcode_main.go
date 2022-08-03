@@ -216,6 +216,9 @@ func main() {
 	// mainMaxAreaWaterContainer()
 
 	// 242. Valid Anagram
-	mainValidAnagram()
+	// mainValidAnagram()
+
+	// 49. Group Anagrams
+	mainGroupAnagrams()
 
 }

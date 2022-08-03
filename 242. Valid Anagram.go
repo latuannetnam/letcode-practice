@@ -121,6 +121,24 @@ func isAnagram(s string, t string) bool {
 	return true
 }
 
+func isAnagramArrayMap(s string, t string) bool {
+	alphabet := make([]int, 26)
+	if len(s) != len(t) {
+		return false
+	}
+	for i := range s {
+		alphabet[s[i]-'a']++
+		alphabet[t[i]-'a']--
+	}
+
+	for i := range alphabet {
+		if alphabet[i] != 0 {
+			return false
+		}
+	}
+	return true
+}
+
 func mainValidAnagram() {
 	s := "anagram"
 	t := "nagaram"
@@ -131,9 +149,9 @@ func mainValidAnagram() {
 	// s = "hqbqo"
 	// t = "lsnma"
 
-	s = "vbnxkji"
-	t = "wqdtegp"
+	// s = "vbnxkji"
+	// t = "wqdtegp"
 
 	fmt.Printf("s:%s t:%s\n", s, t)
-	fmt.Printf("is anagram:%t\n", isAnagramHash2(s, t))
+	fmt.Printf("is anagram:%t\n", isAnagramArrayMap(s, t))
 }
