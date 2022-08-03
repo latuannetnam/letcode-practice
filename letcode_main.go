@@ -210,6 +210,12 @@ func main() {
 	// mainLengthOfLIS()
 
 	// 673. Number of Longest Increasing Subsequence
-	mainFindNumberOfLIS()
+	// mainFindNumberOfLIS() -> Failed
+
+	// 11. Container With Most Water
+	// mainMaxAreaWaterContainer()
+
+	// 242. Valid Anagram
+	mainValidAnagram()
 
 }
