@@ -219,6 +219,9 @@ func main() {
 	// mainValidAnagram()
 
 	// 49. Group Anagrams
-	mainGroupAnagrams()
+	// mainGroupAnagrams()
+
+	// 347. Top K Frequent Elements
+	mainTopKFrequent()
 
 }

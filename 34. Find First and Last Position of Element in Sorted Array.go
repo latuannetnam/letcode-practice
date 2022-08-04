@@ -119,12 +119,12 @@ func searchTargetLeftOrRight(nums []int, target int, start, end int, isLeft bool
 	result := -1
 	left := start
 	right := end
-	fmt.Printf("searchTarget start:%d end:%d %v\n", start, end, nums[start:end+1])
+	// fmt.Printf("searchTarget start:%d end:%d %v\n", start, end, nums[start:end+1])
 	for left <= right {
 		mid := left + (right-left)/2
-		fmt.Printf("left:%d mid:%d right:%d\n", left, mid, right)
+		// fmt.Printf("left:%d mid:%d right:%d\n", left, mid, right)
 		if nums[mid] == target {
-			fmt.Printf("Found target %d at pos:%d\n", target, mid)
+			// fmt.Printf("Found target %d at pos:%d\n", target, mid)
 			result = mid
 			if isLeft {
 				right = mid - 1
@@ -137,7 +137,7 @@ func searchTargetLeftOrRight(nums []int, target int, start, end int, isLeft bool
 			right = mid - 1
 		}
 	}
-	fmt.Printf("searchTarget result:%v\n", result)
+	// fmt.Printf("searchTarget result:%v\n", result)
 	return result
 }
 
@@ -153,11 +153,11 @@ func searchRange(nums []int, target int) []int {
 	end := len(nums) - 1
 	left := -1
 	right := -1
-	fmt.Println("Search left pos of target")
+	// fmt.Println("Search left pos of target")
 	left = searchTargetLeftOrRight(nums, target, start, end, true)
 	if left >= 0 {
 		start = left + 1
-		fmt.Println("Search right pos of target")
+		// fmt.Println("Search right pos of target")
 		right = searchTargetLeftOrRight(nums, target, start, end, false)
 		if right == -1 {
 			right = left
