@@ -225,6 +225,9 @@ func main() {
 	// mainTopKFrequent()
 
 	// 238. Product of Array Except Self
-	mainProductExceptSelf()
+	// mainProductExceptSelf()
+
+	// 36. Valid Sudoku
+	mainValidSudoku()
 
 }
