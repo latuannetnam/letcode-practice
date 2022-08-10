@@ -228,6 +228,9 @@ func main() {
 	// mainProductExceptSelf()
 
 	// 36. Valid Sudoku
-	mainValidSudoku()
+	// mainValidSudoku()
+
+	// 128. Longest Consecutive Sequence
+	mainLongestConsecutive()
 
 }
