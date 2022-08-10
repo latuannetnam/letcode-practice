@@ -231,6 +231,9 @@ func main() {
 	// mainValidSudoku()
 
 	// 128. Longest Consecutive Sequence
-	mainLongestConsecutive()
+	// mainLongestConsecutive()
+
+	// 125. Valid Palindrome
+	mainValidPalindrome()
 
 }

@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-//---------------Other utils
+// ---------------Other utils
 func abs(num int) int {
 	if num < 0 {
 		return -num
@@ -24,8 +24,8 @@ func max(num1 int, num2 int) int {
 	return int(math.Max(float64(num1), float64(num2)))
 }
 
-//---------- Array utils
-//Compared 2 sorted array
+// ---------- Array utils
+// Compared 2 sorted array
 func arrayEqual(arr1 []int, arr2 []int) bool {
 	if len(arr1) != len(arr2) {
 		return false
@@ -56,7 +56,7 @@ func reverseArray(nums []int, start, end int) {
 	}
 }
 
-//-------- String utils -------
+// -------- String utils -------
 type sortRunes []rune
 
 func (s sortRunes) Less(i, j int) bool {
@@ -117,7 +117,18 @@ func isPalindromeString(s1 string) bool {
 	return true
 }
 
-//---------- Binary search ------
+func isAlphanumeric(s byte) bool {
+	return (s >= '0' && s <= '9') || (s >= 'A' && s <= 'Z') || (s >= 'a' && s <= 'z')
+}
+
+func charLowerCase(s byte) byte {
+	if s >= 'A' && s <= 'Z' {
+		return s + 32
+	}
+	return s
+}
+
+// ---------- Binary search ------
 func binarySearch(nums []int, target int, start int, end int) int {
 	result := -1
 	left := start
@@ -179,7 +190,7 @@ func list2Slice(head *ListNode) []int {
 	return lists
 }
 
-//--------------- Stack of Array------------
+// --------------- Stack of Array------------
 type stackOfArray [][]int
 
 func (s stackOfArray) Push(v []int) stackOfArray {
@@ -197,7 +208,7 @@ func (s stackOfArray) isEmpty() bool {
 	return len(s) == 0
 }
 
-//--------------- Queue of Array------------
+// --------------- Queue of Array------------
 type queueOfArray [][]int
 
 func (s queueOfArray) Push(v []int) queueOfArray {
@@ -214,7 +225,7 @@ func (s queueOfArray) isEmpty() bool {
 }
 
 // ------------- Binary Tree
-//https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
+// https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
