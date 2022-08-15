@@ -234,6 +234,9 @@ func main() {
 	// mainLongestConsecutive()
 
 	// 125. Valid Palindrome
-	mainValidPalindrome()
+	// mainValidPalindrome()
+
+	// 121. Best Time to Buy and Sell Stock
+	mainMaxProfit()
 
 }
