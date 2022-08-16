@@ -237,6 +237,9 @@ func main() {
 	// mainValidPalindrome()
 
 	// 121. Best Time to Buy and Sell Stock
-	mainMaxProfit()
+	// mainMaxProfit()
+
+	// 424. Longest Repeating Character Replacement
+	mainCharacterReplacement()
 
 }
