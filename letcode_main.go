@@ -240,6 +240,12 @@ func main() {
 	// mainMaxProfit()
 
 	// 424. Longest Repeating Character Replacement
-	mainCharacterReplacement()
+	// mainCharacterReplacement()
+
+	// 150. Evaluate Reverse Polish Notation
+	// mainEvalRPN()
+
+	// 739. Daily Temperatures
+	mainDailyTemperatures()
 
 }

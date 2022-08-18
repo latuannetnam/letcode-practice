@@ -224,6 +224,58 @@ func (s queueOfArray) isEmpty() bool {
 	return len(s) == 0
 }
 
+// --------------- Stack of String Array------------
+type stackOfString []string
+
+func (s stackOfString) Push(v string) stackOfString {
+	return append(s, v)
+}
+
+func (s stackOfString) Pop() (stackOfString, string) {
+	// FIXME: What do we do if the stackOfArray is empty, though?
+
+	l := len(s)
+	return s[:l-1], s[l-1]
+}
+
+func (s stackOfString) isEmpty() bool {
+	return len(s) == 0
+}
+
+// --------------- Stack of Int Array------------
+type stackOfInt []int
+
+func (s stackOfInt) Push(v int) stackOfInt {
+	return append(s, v)
+}
+
+func (s stackOfInt) Pop() (stackOfInt, int) {
+	// FIXME: What do we do if the stackOfArray is empty, though?
+
+	l := len(s)
+	return s[:l-1], s[l-1]
+}
+
+func (s stackOfInt) isEmpty() bool {
+	return len(s) == 0
+}
+
+func (s stackOfInt) Top() int {
+	if len(s) == 0 {
+		return int(math.Inf(0))
+	} else {
+		return s[0]
+	}
+}
+
+func (s stackOfInt) Bottom() int {
+	if len(s) == 0 {
+		return int(math.Inf(0))
+	} else {
+		return s[len(s)-1]
+	}
+}
+
 // ------------- Binary Tree
 // https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
 type TreeNode struct {
