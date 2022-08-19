@@ -246,6 +246,9 @@ func main() {
 	// mainEvalRPN()
 
 	// 739. Daily Temperatures
-	mainDailyTemperatures()
+	// mainDailyTemperatures()
+
+	// 875. Koko Eating Bananas
+	// mainMinEatingSpeed()
 
 }
