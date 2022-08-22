@@ -276,6 +276,32 @@ func (s stackOfInt) Bottom() int {
 	}
 }
 
+// --------------- Stack of ListNode------------
+type stackOfListNode []*ListNode
+
+func (s stackOfListNode) Push(v *ListNode) stackOfListNode {
+	return append(s, v)
+}
+
+func (s stackOfListNode) Pop() (stackOfListNode, *ListNode) {
+	// FIXME: What do we do if the stackOfArray is empty, though?
+
+	l := len(s)
+	return s[:l-1], s[l-1]
+}
+
+func (s stackOfListNode) isEmpty() bool {
+	return len(s) == 0
+}
+
+func (s stackOfListNode) Bottom() *ListNode {
+	if len(s) == 0 {
+		return nil
+	} else {
+		return s[len(s)-1]
+	}
+}
+
 // ------------- Binary Tree
 // https://www.golangprograms.com/golang-program-to-implement-binary-tree.html
 type TreeNode struct {

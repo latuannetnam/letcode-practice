@@ -251,4 +251,7 @@ func main() {
 	// 875. Koko Eating Bananas
 	// mainMinEatingSpeed()
 
+	// 143. Reorder List
+	mainReorderList()
+
 }
