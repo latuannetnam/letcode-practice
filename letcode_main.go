@@ -252,6 +252,9 @@ func main() {
 	// mainMinEatingSpeed()
 
 	// 143. Reorder List
-	mainReorderList()
+	// mainReorderList()
+
+	// 2. Add Two Numbers
+	mainAddTwoNumbers()
 
 }
