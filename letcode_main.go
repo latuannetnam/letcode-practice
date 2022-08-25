@@ -255,6 +255,9 @@ func main() {
 	// mainReorderList()
 
 	// 2. Add Two Numbers
-	mainAddTwoNumbers()
+	// mainAddTwoNumbers()
+
+	// 287. Find the Duplicate Number
+	mainFindDuplicate()
 
 }
