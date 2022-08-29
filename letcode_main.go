@@ -261,6 +261,9 @@ func main() {
 	// mainFindDuplicate()
 
 	// 28. Implement strStr()
-	mainStrStrSimulation()
+	// mainStrStrSimulation()
+
+	// 75. Sort Colors
+	mainSortColors()
 
 }
