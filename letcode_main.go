@@ -258,6 +258,9 @@ func main() {
 	// mainAddTwoNumbers()
 
 	// 287. Find the Duplicate Number
-	mainFindDuplicate()
+	// mainFindDuplicate()
+
+	// 28. Implement strStr()
+	mainStrStrSimulation()
 
 }
