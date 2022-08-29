@@ -264,6 +264,9 @@ func main() {
 	// mainStrStrSimulation()
 
 	// 75. Sort Colors
-	mainSortColors()
+	// mainSortColors()
+
+	// 202. Happy Number
+	mainIsHappy()
 
 }
