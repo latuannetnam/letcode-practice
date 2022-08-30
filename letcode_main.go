@@ -270,6 +270,9 @@ func main() {
 	// mainIsHappy()
 
 	// 349. Intersection of Two Arrays
-	mainIntersection()
+	// mainIntersection()
+
+	// 350. Intersection of Two Arrays II
+	mainIntersectII()
 
 }

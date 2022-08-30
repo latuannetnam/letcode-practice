@@ -1,7 +1,7 @@
 // Author: Le Anh Tuan (latuannetnam@gmail.com)
 // Letcode problem: 349. Intersection of Two Arrays
 // Letcode link: https://leetcode.com/problems/intersection-of-two-arrays/
-// Level: medium
+// Level: easy
 // Topics: Array, Two pointers, Hash, Sort
 // Problem detail:
 // Given two integer arrays nums1 and nums2, return an array of their intersection.
