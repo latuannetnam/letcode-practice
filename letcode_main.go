@@ -267,6 +267,9 @@ func main() {
 	// mainSortColors()
 
 	// 202. Happy Number
-	mainIsHappy()
+	// mainIsHappy()
+
+	// 349. Intersection of Two Arrays
+	mainIntersection()
 
 }
