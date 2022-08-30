@@ -273,6 +273,9 @@ func main() {
 	// mainIntersection()
 
 	// 350. Intersection of Two Arrays II
-	mainIntersectII()
+	// mainIntersectII()
+
+	// 392. Is Subsequence
+	mainIsSubsequence()
 
 }
