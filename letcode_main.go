@@ -276,6 +276,9 @@ func main() {
 	// mainIntersectII()
 
 	// 392. Is Subsequence
-	mainIsSubsequence()
+	// mainIsSubsequence()
+
+	// 524. Longest Word in Dictionary through Deleting
+	mainFindLongestWord()
 
 }
