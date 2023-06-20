@@ -130,3 +130,6 @@ dmypy.json
 
 # Golang
 letcode-practice
+
+# Rust
+*.lock
